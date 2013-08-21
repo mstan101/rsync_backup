@@ -1,0 +1,5 @@
+# min | hour | day of month | month | day of week
+#*/10 * * * * root /root/backup.sh daily >> /var/log/backup.daily.log 2>&1
+#0 20 * * 6  root /root/backup.sh weekly >> /var/log/backup.weekly.log 2>&1
+0 18 * * * root /root/backup.sh process daily
+0 20 * * 6  root /root/backup.sh process weekly
